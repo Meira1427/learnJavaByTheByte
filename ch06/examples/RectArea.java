@@ -11,8 +11,8 @@ public class RectArea {
 		rightX = getCoordinate("X Coordinate, bottom right corner of rectangle,", -1);
 		rightY = getCoordinate("Y Coordinate, bottom right corner of rectangle,", -1);
 		
-		length = rightX - leftX;
-		height = rightY - leftY;
+		length = Math.abs(rightX - leftX);
+		height = Math.abs(rightY - leftY);
 		area = length*height;
 		
 		System.out.print("\nThe area of triangle (" + leftX + ", " + leftY + ") and (");
